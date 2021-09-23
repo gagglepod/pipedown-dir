@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Source+Sans+Pro:wght@600&display=swap"
       rel="stylesheet"
     />
     <title>To Do App</title>
@@ -16,15 +16,20 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <script src="./firebase.js"></script>
-    <script src="./app.js"></script>
   </head>
   <body>
     <h1>Pipedown Directory</h1>
 
     <div class="content">
-      <form id="add-host-form"></form>
+      <form id="add-host-form">
+        <input type="text" name="name" placeholder="Host Name" />
+        <input type="text" name="website" placeholder="Host Website" />
+        <input type="text" name="url" placeholder="Host URL" />
+        <button class="button">Add Host</button>
+      </form>
 
       <ul id="host-list"></ul>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>

@@ -1,13 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #5eb1bf;
-  font-size: 18px;
 }
 
 h1 {
@@ -69,6 +62,11 @@ li div {
   cursor: pointer;
 }
 
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
 form input {
   float: left;
   width: 38%;
@@ -95,15 +93,23 @@ form:after {
   display: block;
 }
 
-button {
+.button {
   border: 0;
-  background: #fff;
+  background: #bf6c5e;
   border-radius: 10px;
   padding: 13px;
   width: 14%;
-  box-shadow: -1px 0px 1px rgba(0, 0, 0, 0.1);
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-family: ubuntu;
   letter-spacing: 1px;
-  color: #999;
+  color: #fff;
+  box-shadow: 0px 2px 5px #999;
+}
+
+.button:hover {
+  background-color: #b5dde4;
+  box-shadow: 0px 2px 5px #333;
+  color: #000;
+  transform: translateY(-1px);
+  transition: all 0.25s ease;
 }
